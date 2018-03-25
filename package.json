@@ -1,6 +1,6 @@
 {
   "name": "@mediahuis/babel-plugin-module-resolver",
-  "version": "3.1.0",
+  "version": "3.1.1",
   "main": "lib/index.js",
   "description": "Module resolver plugin for Babel",
   "repository": {
@@ -8,9 +8,11 @@
     "url": "https://github.com/tleunen/babel-plugin-module-resolver.git"
   },
   "engines": {
-    "node": ">= 6.0.0"
+    "node": ">= 4.0.0"
   },
-  "files": ["lib"],
+  "files": [
+    "lib"
+  ],
   "author": {
     "name": "Tommy Leunen",
     "email": "tommy.leunen@gmail.com",
@@ -68,11 +70,17 @@
     "precommit": "lint-staged"
   },
   "lint-staged": {
-    "*.{json,md}": ["prettier-eslint --write", "git add"],
-    "*.{js}": ["prettier-eslint --write", "eslint --fix", "git add"]
+    "*.{js}": [
+      "prettier-eslint --write",
+      "git add"
+    ]
   },
   "jest": {
+    "testEnvironment": "node",
     "testRegex": "/test/.*\\.test\\.js$",
-    "collectCoverageFrom": ["src/**/*.js", "!src/log.js"]
+    "collectCoverageFrom": [
+      "src/**/*.js",
+      "!src/log.js"
+    ]
   }
 }
