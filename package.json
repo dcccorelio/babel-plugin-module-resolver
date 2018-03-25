@@ -1,5 +1,5 @@
 {
-  "name": "babel-plugin-module-resolver",
+  "name": "@mediahuis/babel-plugin-module-resolver",
   "version": "3.1.0",
   "main": "lib/index.js",
   "description": "Module resolver plugin for Babel",
